@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset=utf-8/>
+    <title> hw-02 </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id = "data-abstraction">
+        <div class = "info">
+            <h1> Dataset Types </h1>
+            <table>
+                <tr>
+                    <th> Data </th>
+                    <th> Link </th>
+                    <th> Dataset Type </th>
+                </tr>
+                <tr>
+                    <td> Airports </td>
+                    <td> <a href="data/Airports.csv"> Airports.csv </a> </td>
+                    <td> table </td>
+                </tr>
+                <tr>
+                    <td> Google-Web </td>
+                    <td> <a href = "data/Google-Web.txt"> Google-Web.txt </a></td>
+                    <td> network </td>
+                </tr>
+                <tr>
+                    <td> UFO </td>
+                    <td> <a href="data/UFO.csv"> UFO.csv </a> </td>
+                    <td> table </td>
+                </tr>
+            </table>
+        </div>
+        <div class = "info">
+            <h1> Data Types </h1>
+            <h2> Airports </h2>
+            <ul>
+                <li> row type = item </li>
+                <li> column type: Airport = Attribute </li>
+                <ul><li> Attribute = Categorical </li></ul>
+                <li> column type: Latitude = Position </li>
+                <li> column type: Longitude = Position </li>
+            </ul>
+            <h2> Google-Web </h2>
+            <ul>
+                <li> row type: link </li>
+                <li> column type: FromNodeID = Attribute</li>
+                <ul><li> Attribute = Categorical </li></ul>
+                <li> column type: ToNodeID = Attribute </li>
+                <ul><li> Attribute = Categorical </li></ul>
+            </ul>
+            <h2> UFO </h2>
+            <ul>
+                <li> row type: item </li>
+                <li> column type: datetime = Attribute </li>
+                <ul><li> Attribute = Quantitative Sequential </li></ul>
+                <li> column type: city = Attribute </li>
+                <ul><li> Attribute = Categorical </li></ul>
+                <li> column type: state = Attribute </li>
+                <ul><li> Attribute = Categorical </li></ul>
+                <li> column type: country = Attribute </li>
+                <ul><li> Attribute = Categorical </li></ul>
+                <li> column type: shape = Attribute </li>
+                <ul><li> Attribute = Categorical </li></ul>
+                <li> column type: duration (seconds) = Attribute </li>
+                <ul><li> Attribute = Quantitative Sequential </li></ul>
+            </ul>
+        </div>
+    </div>
+    <div id = "task-abstraction">
+        <h1>
+            Task Abstraction
+        </h1>
+
+        <div class="container">
+            <div class="column">
+                <div>
+                    <img src="img/vis1.png" alt="vis1" width=100% height=100%>
+                </div>
+                <div class="text">
+                    test 1
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <img src="img/vis2.png" alt="vis2" width=100% height=100%>
+                </div>
+                <div class="text">
+                    test 2
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "decoration" class="container">
+        <svg width="100" height="100">
+            <rect x="10" y="10" width="80" height="80" fill="blue" stroke="black" stroke-width="3" onmouseover="turnRed(this)" onmouseout="turnBlue(this)"/>
+        </svg>
+
+        <svg height="100" width="100">
+            <circle id = "circle" cx="50" cy="50" r="40" fill="red" opacity=".5" stroke-width="3" onmouseover="getBorder(this)" onmouseout="rmBorder(this)"/>
+        </svg>
+
+        <svg width="100" height="100">
+            <rect x="10" y="10" width="80" height="80" fill="blue" stroke="black" stroke-width="3" onmouseover="turnRed(this)" onmouseout="turnBlue(this)"/>
+        </svg>
+
+        <svg height="100" width="100" id = "circle">
+            <circle cx="50" cy="50" r="40" fill="red" opacity=".5" stroke-width="3" onmouseover="getBorder(this)" onmouseout="rmBorder(this)"/>
+        </svg>
+
+        <svg width="100" height="100">
+            <rect x="10" y="10" width="80" height="80" fill="blue" stroke="black" stroke-width="3" onmouseover="turnRed(this)" onmouseout="turnBlue(this)"/>
+        </svg>
+    </div>
+    <h1> Acknowledgements </h1>
+    <ul>
+        <li><a href="https://www.w3schools.com/html/default.asp"> HTML w3schools </a></li>
+        <li><a href="https://www.w3schools.com/css/default.asp"> CSS w3schools </a></li>
+        <li><a href="https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/"> 2 Columns GeeksforGeeks </a></li>
+    </ul>
+
+    <script type="text/javascript">
+        function turnRed(x) {
+            x.style.fill = "red";
+        }
+
+        function turnBlue(x) {
+             x.style.fill = "blue";
+        }
+
+        function getBorder(x) {
+            x.setAttribute("stroke", "black")
+        }
+
+        function rmBorder(x) {
+             x.setAttribute("stroke", "")
+        }
+    </script> 
+
+<!--
+Add a div with the id "data-abstraction". Inside of this div: done
+Add a div with the class "info". Inside of this div: done
+Add a centered header: "Dataset Types". done
+Add a table with a blue header row. The table should have three columns: Data, Link, and Dataset Type. Add a row to the table for each dataset in the data folder of your cloned repo. done
+Add another div with the class "info". Inside of this div: done
+Add a centered header: "Data Types". done
+For each dataset you have, add a left-aligned header with the name of the dataset (UFO, Airports, Google-Web).
+Under the header, add an unordered list that lists the datatype of the columns and rows in the dataset.
+For any datasets that include attributes, list the attributes and their types as sub points in the list.
+-->
+
+</body>
+
+</html>
