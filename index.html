@@ -70,51 +70,81 @@
             </ul>
         </div> <!-- done with list part of task -->
     </div> <!-- done with data abstraction task -->
+
+    
+    <!-- Task Abstraction div -->
     <div id = "task-abstraction">
         <h1>
             Task Abstraction
         </h1>
 
+        <!-- Div containing both columns -->
         <div class="container">
+
+            <!-- column 1, with img 1 and associated actions -->
             <div class="column">
                 <div>
                     <img src="img/vis1.png" alt="vis1" width=100% height=100%>
                 </div>
                 <div class="text">
-                    test 1
+                    <li>High Level - Present. This tool is clearly trying to show that in the last 3 days the temperature has been abnormally high, and since the conclusion is already known it is being presented.
+                    <br /><br /><li>
+                    Mid Level - Locate. As the goal of this tool is displaying the temperature in the last 3 days in relation to everything else, the location of the temperature in the visual is the only unknown. 
+                    <br /><br /><li>
+                    Low Level - Compare. The visual is trying to show that the last 3 days were higher than average, which is comparing the last 3 days to everything else.
+                    <br /><br /><li>
+                    Target - Outliers. The last 3 days is being compared to all the other data to show how much of an outlier the last 3 days are. 
                 </div>
             </div>
+
+            <!-- column 2, with img 2 and associated actions -->
             <div class="column">
                 <div>
                     <img src="img/vis2.png" alt="vis2" width=100% height=100%>
                 </div>
                 <div class="text">
-                    test 2
+                    <li>High Level - Present. This tool seems to be demonstrating that there has been an increase in temperature in these 2 cities in the last 20 years.
+                    <br /><br /><li>
+                    Mid Level - Lookup. Both the target and the location are known in this scenario.
+                    <br /><br /><li>
+                    Low Level - Compare. The visual is showing the comparison between the two cities, to show that the trends in temperature are similar.
+                    <br /><br /><li>
+                    Target - Trends. This visual seems to be trying to show the trend of increased temperatures in these two cities. 
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Decorations Div -->
     <div id = "decoration" class="container">
+        <!-- SVG Rectangle -->
         <svg width="100" height="100">
             <rect x="10" y="10" width="80" height="80" fill="blue" stroke="black" stroke-width="3" onmouseover="turnRed(this)" onmouseout="turnBlue(this)"/>
         </svg>
 
+        <!-- SVG Circle -->
         <svg height="100" width="100">
             <circle id = "circle" cx="50" cy="50" r="40" fill="red" opacity=".5" stroke-width="3" onmouseover="getBorder(this)" onmouseout="rmBorder(this)"/>
         </svg>
 
+        <!-- SVG Rectangle -->
         <svg width="100" height="100">
             <rect x="10" y="10" width="80" height="80" fill="blue" stroke="black" stroke-width="3" onmouseover="turnRed(this)" onmouseout="turnBlue(this)"/>
         </svg>
 
+        <!-- SVG Circle -->
         <svg height="100" width="100" id = "circle">
             <circle cx="50" cy="50" r="40" fill="red" opacity=".5" stroke-width="3" onmouseover="getBorder(this)" onmouseout="rmBorder(this)"/>
         </svg>
 
+        <!-- SVG Rectangle -->
         <svg width="100" height="100">
             <rect x="10" y="10" width="80" height="80" fill="blue" stroke="black" stroke-width="3" onmouseover="turnRed(this)" onmouseout="turnBlue(this)"/>
         </svg>
+
     </div>
+
+    <!-- Acknowledgements Header and URL List -->
     <h1> Acknowledgements </h1>
     <ul>
         <li><a href="https://www.w3schools.com/html/default.asp"> HTML w3schools </a></li>
@@ -122,6 +152,7 @@
         <li><a href="https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/"> 2 Columns GeeksforGeeks </a></li>
     </ul>
 
+    <!-- Javascript functions for changing decorations -->
     <script type="text/javascript">
         function turnRed(x) {
             x.style.fill = "red";
