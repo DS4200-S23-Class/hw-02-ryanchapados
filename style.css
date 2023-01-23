@@ -1,21 +1,21 @@
 body{
-    font-family: "Arial";
+    font-family: "Arial"; /* make the whole page Arial */
 }
 
 h1{
-    text-align: center;
+    text-align: center; /* center all headings of this size */
 }
 
 table, th, td{
-    border: 1px solid;
+    border: 1px solid; /* adding a border to the table to neaten it up a bit */
 }
 
 th{
-    background-color: blue;
+    background-color: blue; /* setting the header of this table to blue by defining bg color of all header elements */
 }
 
 h2{
-    text-align: left;
+    text-align: left; /* left align all headings of this size, different from h1 size */
 }
 
 .container {
