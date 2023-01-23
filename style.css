@@ -36,12 +36,12 @@ h2{
   background-color: #f1f1f1;
   margin: 10px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 15px;
   width: 80%;
   text-align: center;
 }
 
 .column > .text {
   text-align: left;
-  color: dodgerblue;
+  color: black;
 }
